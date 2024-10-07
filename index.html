@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="styles.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+  <body>
+    <h1 id="title">The Well-being Survey Form</h1>
+    <p id="description">This Survey will help us improvise our app.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required/>
+      <br/>
+
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required/>
+      <br/>
+
+      <label for="number" id="number-label">Age(optional)</label>
+      <input id="number" type="number" min="10" max="100" placeholder="Age"/>
+      <br/>
+
+      <!-- Preferred mode of relaxation-->
+      <label>How do you choose to relax?</label>
+      <br/>
+      <select id="dropdown" name="mode of relaxation">
+<option value="movies">Movies</option>
+<option value="reading">Reading</option>
+<option value="Cooking">Cooking</option>
+<option value="travel">Go out for travels</option>
+<option value="Others">Others</option>
+<br/>
+
+<!-- Preferred mode of communication-->
+<label>Whom do you prefer to talk in a situation of crisis?</label>
+<br/>
+<input type="radio" name="communication" id="parents" value="parents"/>
+<label for="parents">Parents</label>
+<br/>
+<input type="radio" name="communication" id="siblings" value="siblings"/>
+<label for="siblings">Siblings</label>
+<br/>
+<input type="radio" name="communication" id="cousins" value="cousins"/>
+<label for="cousins">Cousins</label>
+<br/>
+<input type="radio" name="communication" id="teacher" value="teacher"/>
+<label for="teacher">Teacher</label>
+<br/>
+<input type="radio" name="communication" id="Other" value="other"/>
+<label for="Other">Other</label>
+<br/>
+
+<!-- Preferred practises-->
+<label> Select your preferred practises when your mind is puzzzled</label><br/>
+ <select id="practises" name="Practises">
+      <option value="journaling">Journaling</option>
+      <option value="meditation">Meditation</option>
+      <option value="walking">Go out for a walk</option>
+      <option value="Song">Listening to songs</option>
+      <option value="Other">Others</option></select>
+      <br/>
+
+<!-- Preferred activities-->
+<label>Please select activities you would enjoy for a mindful break:</label>
+<input type="checkbox" id="mindful seeing" name="activities" value="mindful seeing"/>
+<label for="mindful seeing">Mindful-seeing</label><br/>
+
+<input type="checkbox" id="mindful listening" name="activities" value="mindful listening"/>
+<label for="mindful-listenining">Mindful-listening</label><br/>
+
+<input type="checkbox" id="body scan" name="activities" value="body scan"/>
+<label for="body scan">Body Scan</label><br/>
+
+<input type="checkbox" id="five-senses exercise" name="activities" value="five-senses exercise"/>
+<label for="five-senses exercise">Five-senses exercise</label><br/>
+
+<input type="checkbox" id="mindful walking down the street technique" name="activities" value="mindful walking down the street technique"/>
+<label for="mindful walking down the street technique">Mindful walking down the street technique</label><br/>
+
+<input type="checkbox" id="The 3-Minute Breathing Space" name="activities" value="The 3-Minute Breathing Space"/>
+<label for="The 3-Minute Breathing Space">The 3-Minute Breathing Space</label><br/>
+
+<input type="checkbox" id="Mindful Eating for Four Minutes" name="activities" value="Mindful Eating for Four Minutes"/>
+<label for="Mindful Eating for Four Minutes">Mindful Eating for Four Minutes</label><br/>
+
+<input type="checkbox" id="Observe Your Thoughts for 15 Minutes" name="activities" value="Observe Your Thoughts for 15 Minutes"/>
+<label for="Observe Your Thoughts for 15 Minutes">Observe Your Thoughts for 15 Minutes</label><br/>
+
+<input type="checkbox" id="Stare at the Center" name="activities" value="Stare at the Center"/>
+<label for="Stare at the Center">Stare at the Center</label><br/>
+
+<input type="checkbox" id="Gratitude Journaling" name="activities" value="Gratitude Journaling"/>
+<label for="Gratitude Journaling">Gratitude Journaling</label><br/>
+
+<input type="checkbox" id="Single Tasking" name="activities" value="Single Tasking"/>
+<label for="Single Tasking">Single Tasking</label><br/>
+
+<input type="checkbox" id="Mindful Gardening" name="activities" value="Mindful Gardening"/>
+<label for="Mindful Gardening">Mindful Gardening</label><br/>
+
+<!-- textarea component -->
+<label for="sustainable-travel">
+  How important is sustainable travel to you, and what practices do you follow?</label><br/>
+  <textarea
+  id="sustainable-travel"
+  name="sustainable-travel"
+  rows="5"
+  cols="50"
+  placeholder="How important is sustainable travel to you, and what practices do you follow?"></textarea>
+  <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>

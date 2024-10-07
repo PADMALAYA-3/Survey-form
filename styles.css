@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+body {
+  /* border-image: linear-gradient(
+      rgba(174, 229, 230, 0.396),
+      rgba(3, 113, 133, 0.378)
+    )
+    fill 1; */
+  background-image: url(/cute-young-woman-meditation-yoga-cartoon.webp);
+  /*  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 2rem; */
+}
+
+#title {
+  font-family: cursive;
+  /* font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
+  font-size: 40px;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-family: sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; */
+  font-size: 20px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border-radius: 30px; */
+  /* width: 60%; */
+  margin: 2.5rem;
+  padding: 2rem;
+  /* background-color: rgba(3, 180, 192, 0.656); */
+  /* font-family: 'Edu AU VIC WA NT Hand', cursive; */
+  /* font-optical-sizing: auto; */
+  /* font-weight: 500; */
+  /* font-size: 24px; */
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  color: grey;
+  font-size: 18px;
+  padding: 6px;
+  font-family: 'Playwrite CU', cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  border: solid 2px grey;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border: 2px solid white;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: 2px solid grey;
+}
+
+/* radio button styles */
+
+.radio-group,
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+input[type='radio'],
+input[type='checkbox'] {
+  width: 10%;
+  height: 20px;
+}
+input[type='radio']:checked,
+input[type='checkbox']:checked {
+  accent-color: #ff5757;
+}
+
+input[type='radio']:focus,
+input[type='checkbox']:focus {
+  outline: none !important;
+}
+
+@media (max-width: 1050px) {
+  #survey-form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 1rem;
+    background-image: url(/mesut-kaya-eOcyhe5-9sQ-unsplashmed.jpg);
+  }
+  #survey-form {
+    width: 83%;
+    font-size: 17px;
+    padding: 1rem;
+    margin: 1.5rem auto;
+  }
+  #title {
+    font-size: 28px;
+  }
+  #description {
+    font-size: 15px;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-position: left;
+  }
+  #survey-form {
+    width: 87%;
+  }
+}
