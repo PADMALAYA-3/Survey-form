@@ -8,14 +8,26 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-image: url(/cute-young-woman-meditation-yoga-cartoon.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.8; */
+  color: white;
+  padding: 2rem;
 }
 
 #title {
-  font-family: cursive;
-  font-weight: 400;
-  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -28,28 +40,31 @@ body {
 #survey-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 23px;
   border-radius: 30px;
   width: 60%;
-  margin: 2.5rem;
+  margin: 2.5rem auto;
   padding: 2rem;
-  background-color: rgb(207, 188, 207);
-  font-size: 22px;
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  background-color: rgb(205, 177, 205);
 }
 
 input,
 select,
 textarea {
   width: 100%;
-  color: grey;
-  font-size: 18px;
+  color: rgb(38, 37, 37);
+  font-size: 28px;
   padding: 6px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-optical-sizing: auto;
+  font-family: 'Alex Brush', cursive;
   font-weight: 400;
   font-style: normal;
+  border: solid 2px rgb(151, 148, 148);
   border-radius: 10px;
-  border: solid 2px grey;
 }
 
 input:hover,
